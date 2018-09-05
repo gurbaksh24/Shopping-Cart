@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Shopping_Cart
 {
-    interface ICart
+    interface ICartOperations
     {
-        void AddItemsToCart(int ItemId, int ItemQty, double ItemPrice);
+        void AddItemsToCart(int ItemId, List<Items> items);
         void RemoveItemsFromCart(int ItemId);
         double TotalAmountOfCart();
         void ShowCart();
